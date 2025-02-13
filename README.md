@@ -1,5 +1,13 @@
 # Run spark in Docker Container
-This official docker image will create a container of ubuntu machine with Java17, scala2.12, spark3.5.4 and python3 with pip package manager in it
+We are using official docker image as base image which will create a container of ubuntu machine with Java17, scala2.12, spark3.5.4 and python3 with pip package manager in it.
+
+#### Method 1 (Non-Customizable): Pull the prebuild image from Docker Hub and create container by using the image.
+```
+docker pull engnilesh/spark:v1.0
+```
+----------------------------------------------------------------------------------------------------
+
+#### Method 2 (Customizable): Build your own image by using Dockerfile
 
 > github/apache/spark-docker
 [Official Docker file](https://github.com/apache/spark-docker/blob/6b917ced4279dd7b3a33a81a08db37b3f27e037b/3.5.4/scala2.12-java17-python3-ubuntu/Dockerfile)
